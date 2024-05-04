@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main-content  {
+    display: flex;
+    margin: 9.5rem auto;
+    height: 405px;
+    width: 540px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.product-image, .product-info {
+    flex-basis: 50%;
+}
+.image-product-desktop {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.image-product-mobile {
+    display: none;
+}
+
+.product-info {
+    padding: 1.65rem 1.85rem;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+
+.title {
+    font-family: "Fraunces", serif;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.4rem;
+}
+
+.description > p {
+    font-size: 0.755rem;
+    line-height: 1.75;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.45rem;
+}
+
+.price > h1 {
+    font-family: "Fraunces", serif;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.price > span {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.75rem;
+}
+
+.cart {
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.cart > img {
+    width: 6.5%;
+    margin-right: .55rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    font-weight: 500; 
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/*Mobile devices*/
+@media screen and (max-width: 375px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+    /*.image-product-mobile {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }*/
+
+    .image-product-desktop {
+        display: none;
+    }
+
+
+}
